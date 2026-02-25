@@ -1,0 +1,75 @@
+                               for mitesh code 
+===== DATA PREVIEW =====
+   EmployeeID  Age  Experience  Salary  Department
+0         301   23           1   25000          IT
+1         302   41          15   95000     Finance
+2         303   35          10   75000       Sales
+3         304   28           5   45000   Marketing
+4         305   49          22  140000  Management
+
+===== BASIC INFO =====
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 7 entries, 0 to 6
+Data columns (total 5 columns):
+ #   Column      Non-Null Count  Dtype 
+---  ------      --------------  ----- 
+ 0   EmployeeID  7 non-null      int64 
+ 1   Age         7 non-null      int64 
+ 2   Experience  7 non-null      int64 
+ 3   Salary      7 non-null      int64 
+ 4   Department  7 non-null      object
+dtypes: int64(4), object(1)
+memory usage: 408.0+ bytes
+
+===== STATISTICAL SUMMARY =====
+       EmployeeID        Age  Experience         Salary
+count    7.000000   7.000000    7.000000       7.000000
+mean   304.000000  34.142857    9.571429   70714.285714
+std      2.160247   8.649250    6.996598   37906.526640
+min    301.000000  23.000000    1.000000   25000.000000
+25%    302.500000  29.000000    5.500000   47500.000000
+50%    304.000000  33.000000    8.000000   65000.000000
+75%    305.500000  38.000000   12.500000   85000.000000
+max    307.000000  49.000000   22.000000  140000.000000
+
+===== MEAN =====
+EmployeeID      304.000000
+Age              34.142857
+Experience        9.571429
+Salary        70714.285714
+dtype: float64
+
+===== MEDIAN =====
+EmployeeID      304.0
+Age              33.0
+Experience        8.0
+Salary        65000.0
+dtype: float64
+
+===== MODE =====
+EmployeeID      301
+Age              23
+Experience        1
+Salary        25000
+Name: 0, dtype: int64
+
+===== VARIANCE =====
+EmployeeID    4.666667e+00
+Age           7.480952e+01
+Experience    4.895238e+01
+Salary        1.436905e+09
+dtype: float64
+
+===== STANDARD DEVIATION =====
+EmployeeID        2.160247
+Age               8.649250
+Experience        6.996598
+Salary        37906.526640
+dtype: float64
+
+===== NUMPY OPERATIONS (Salary Column) =====
+Salary Array: [ 25000  95000  75000  45000 140000  50000  65000]
+Min Salary: 25000
+Max Salary: 140000
+Mean Salary: 70714.28571428571
+Std Dev Salary: 35094.62427582356
