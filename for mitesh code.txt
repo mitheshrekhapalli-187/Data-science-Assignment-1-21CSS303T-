@@ -1,1 +1,84 @@
+import pandas as pd
+import numpy as np
+
+# -----------------------------
+# Create Employee Data
+# -----------------------------
+data = {
+    "EmployeeID": [301, 302, 303, 304, 305, 306, 307],
+    "Age": [23, 41, 35, 28, 49, 30, 33],
+    "Experience": [1, 15, 10, 5, 22, 6, 8],
+    "Salary": [25000, 95000, 75000, 45000, 140000, 50000, 65000],
+    "Department": ["IT", "Finance", "Sales", "Marketing", "Management", "HR", "IT"]
+}
+
+df = pd.DataFrame(data)
+
+# -----------------------------
+# DATA PREVIEW
+# -----------------------------
+print("===== DATA PREVIEW =====")
+print(df)
+print()
+
+# -----------------------------
+# BASIC INFO
+# -----------------------------
+print("===== BASIC INFO =====")
+df.info()
+print()
+
+# -----------------------------
+# STATISTICAL SUMMARY
+# -----------------------------
+print("===== STATISTICAL SUMMARY =====")
+print(df.describe())
+print()
+
+# -----------------------------
+# MEAN
+# -----------------------------
+print("===== MEAN =====")
+print(df.mean(numeric_only=True))
+print()
+
+# -----------------------------
+# MEDIAN
+# -----------------------------
+print("===== MEDIAN =====")
+print(df.median(numeric_only=True))
+print()
+
+# -----------------------------
+# MODE
+# -----------------------------
+print("===== MODE =====")
+print(df.mode(numeric_only=True).iloc[0])
+print()
+
+# -----------------------------
+# VARIANCE
+# -----------------------------
+print("===== VARIANCE =====")
+print(df.var(numeric_only=True))
+print()
+
+# -----------------------------
+# STANDARD DEVIATION
+# -----------------------------
+print("===== STANDARD DEVIATION =====")
+print(df.std(numeric_only=True))
+print()
+
+# -----------------------------
+# NUMPY OPERATIONS (Salary Column)
+# -----------------------------
+print("===== NUMPY OPERATIONS (Salary Column) =====")
+
+salary_array = df["Salary"].values
+print("Salary Array:", salary_array)
+print("Min Salary:", np.min(salary_array))
+print("Max Salary:", np.max(salary_array))
+print("Mean Salary:", np.mean(salary_array))
+print("Std Dev Salary:", np.std(salary_array))
 
